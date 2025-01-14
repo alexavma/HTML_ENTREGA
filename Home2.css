@@ -43,11 +43,6 @@
 
 }
 
-
-
-
-
-
     button {
         background-color: transparent;
         border-color: white;
@@ -55,7 +50,7 @@
         padding: 15px;
         color: white;
         border: 1px solid;
-        font-family: 'Arial';
+        font-family: "BrandonGrotesque";
 
     }
 
@@ -80,7 +75,18 @@
         transform: rotate(90deg);
         display: inline-block;
         font-weight: bold;
-        color: #7E7E7E
+        color: #7E7E7E;
+        font-family: "BrandonGrotesque";
+    }
+
+    #RayitaRedes {
+        height: 40px;
+        border-left: 3px solid;
+        width: 1px;
+        color: #7E7E7E;
+        margin-top: 30px;
+
+
     }
 
 
