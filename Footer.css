@@ -1,0 +1,213 @@
+@font-face {
+    font-family:'PFRegalDisplayProBlack';
+    src: url('./Fuentes/PFRegalDisplayProRegular.ttf');
+
+    font-family: 'BrandonGrotesque';
+    src: url('./Fuentes/BrandonGrotesque.otf');
+ }
+
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "PFRegalDisplayProRegular";
+
+    footer {
+        width: 100%;
+        background-color: black;
+        margin-top: 300px;
+
+    
+        .PorEncima {
+            background-color: rgb(53, 51, 51);
+            width: 90%;
+            margin: auto;
+            transform: translateY(-50%);
+
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+
+            .Email {
+                display: grid;
+                padding-right: 100px;
+                margin-left: 20px;
+                margin-right: 20px;
+                margin-top: 10px;
+                color: white;
+                font-size: 20px;
+
+                input  {
+                    background-color: transparent;
+                    border: solid 1px gray;
+                    border-radius:50px;
+                    padding: 10px 20px;
+                    font-size: 20px;
+                    margin-top: 10px;
+                }
+
+                .Nombre {
+                    margin-left: 15px;
+                }
+
+
+                .Palabras {
+                    background-color: transparent;
+                    border: solid 1px rgb(255, 136, 0);
+                    color: orange;
+                    border-radius:50px;
+                    padding: 10px 20px;
+                    font-size: 20px;
+                    width: 60%;
+                    justify-self: end;
+                    margin-top: 10px;
+                    margin-bottom: 20px;
+                }
+            }
+        
+            #TitulosFooter {
+
+                justify-self: center;
+                margin-top: 20px;
+    
+                #UnTitulo {
+                    color: rgb(240, 100, 0);
+                    font-size: 15px;
+                }
+    
+                #SegundoTitulo {
+                    color: white;
+                    font-size: 30px;
+                }
+
+
+        }
+    }
+
+
+        .PorDebajo {
+        color: white;
+        display: grid;
+
+        width: 90%;
+        margin: auto;
+        gap: 10px;
+        
+
+            .CopyRight {
+                border-top: solid 2px white;
+
+                #copy {
+                margin: 20px 0px;
+                text-align: center;
+                font-family: "BrandonGrotesque";
+
+
+            }
+        }
+
+            .Enlaces {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                font-size: 18px;
+
+            .primera {
+                align-self: self-end;
+            }
+
+            .medio {
+                justify-self: center;
+
+            }
+        
+            .segunda {
+                align-self: center;
+            }
+
+            .tercera {
+                align-self: end;
+
+                #separada {
+                    margin-top: 25px;
+                }
+                }
+
+            .ultima {
+                text-align: right;
+                justify-self: center;
+
+            }
+
+            ul {
+                li {
+                    list-style: none;
+                    font-family: "BrandonGrotesque";
+                }
+            }
+
+        }
+
+}
+
+}
+
+}
+
+
+
+@media (max-width: 900px) {
+    footer {
+        .PorEncima { 
+            display: none;
+        }
+    
+        .PorDebajo {
+            .Enlaces{
+                grid-template-columns: repeat(2,1fr);
+
+            .primera {
+                grid-column: span 2;
+            }
+
+            .medio{
+                margin-top: 10px;
+                justify-self: baseline;
+                font-size: 20px;
+                font-weight: lighter;
+                color: #aaa;
+
+            }
+
+            .ultima{
+                text-align: left;
+                justify-self: baseline;
+                grid-column: span 2;
+                margin-top: 30px;
+                font-size: 24px;
+
+            }
+
+            .eliminar {
+                display: none;
+            }
+        
+        }
+        
+        
+        
+            .CopyRight {
+                display: none;
+
+            }
+
+
+
+
+    }
+
+
+}
+}
